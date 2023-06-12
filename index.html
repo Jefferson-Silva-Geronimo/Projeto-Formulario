@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Formulário</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="form">
+            <form>
+                <div id="title">
+                    <h1>Cadastro de DEVs</h1>
+                </div>
+                <div id="subtitle">
+                    <h2>Completo com suas Informações</h2>
+                </div>
+                <div class="info-pessoal">
+                    <label for="txtnome">
+                        Nome <br>
+                        <input type="text" name="txtnome" id="txtnome">
+                    </label>
+                    <label for="txt-sobrenome">
+                        Sobrenome <br>
+                        <input type="text" name="txt-sobrenome" id="txt-sobrenome">
+                    </label>
+                    <label for="txt-email">
+                        Email <br>
+                        <input type="email" name="txt-email" id="txt-email">
+                    </label>
+                </div>
+                <label for="txtatuacao" id="atuacao">
+                    <p>De qual lado da aplicação você desenvolve?</p>
+                    <input type="radio" name="txtatuacao" id="Front-End"> Front-End
+                    <input type="radio" name="txtatuacao" id="Back-End"> Back-End
+                    <input type="radio" name="txtatuacao" id="FullStack"> FullStack
+                </label>
+                <section class="nivel">
+                    <p>Senioridade</p>
+                    <select name="txtnivel" id="nivel">
+                        <option value="">Selecione</option>
+                        <option value="junior" >Junior</option>
+                        <option value="Pleno">Pleno</option>
+                        <option value="Senior">Senior</option>
+                    </select>
+                </section>
+                <label for="txt-tecnologias">
+                    <p>Selecione as tecnologias que utiliza:</p>
+                    <input type="checkbox" name="txt-html" id="html"> HTML
+                    <input type="checkbox" name="txt-css" id="css"> CSS
+                    <input type="checkbox" name="txt-javascript" id="javascript"> JavaScript
+                    <input type="checkbox" name="txt-php" id="php"> PHP
+                    <input type="checkbox" name="txt-csharp" id="csharp"> C#
+                    <input type="checkbox" name="txt-java" id="java"> Java
+                    <input type="checkbox" name="txt-python" id="python"> Python
+                </label><br>
+                <label for="txt-experiencia">
+                    <p>Conte um pouco mais da sua experiência:</p>
+                    <textarea name="txt-experiencia" id="txt-experiencia" cols="30" rows="6"></textarea>
+                </label><br>
+                <div class="botao">
+                    <a href=""><input type="button" value="Concluído" id="botao"></a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
